@@ -1,3 +1,4 @@
+---
 
 # Advanced Exchanger
 
@@ -40,20 +41,29 @@ The application follows the MVVM (Model-View-ViewModel) architecture pattern, wh
 
 ### Installation
 
-1. **Clone the repository**:
+1. **Unzip the project**:
+
+   Download the zipped project and unzip it to your desired directory.
+
+2. **Navigate to the project directory**:
 
    ```bash
-   git clone https://github.com/yourusername/advanced-exchanger.git
-   cd advanced-exchanger
+   cd path_to_unzipped_project
    ```
 
-2. **Install dependencies**:
+3. **Install dependencies**:
 
    ```bash
    flutter pub get
    ```
 
-3. **Set up environment variables**:
+4. **Generate MobX code**:
+
+   ```bash
+   flutter packages pub run build_runner build --delete-conflicting-outputs
+   ```
+
+5. **Set up environment variables**:
 
    Find a `.env` file in the root directory and add your API key:
 
